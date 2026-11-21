@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archivos del Laboratorio · Delilah y Dessa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-writer="Delilah">
+<header class="top">
+  <h1>Archivos del Laboratorio</h1>
+  <p class="sub">Notas, transcripciones y cartas. Elige quién escribe.</p>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-w="Delilah" class="tab on">Delilah</button>
+    <button role="tab" data-w="Dessa" class="tab">Dessa</button>
+  </nav>
+  <section class="stats" id="stats"></section>
+</header>
+<main class="wrap">
+  <aside class="side">
+    <input id="q" type="search" placeholder="Buscar en títulos y textos…" aria-label="Buscar">
+    <div class="filters" id="filters"></div>
+    <ul class="list" id="list"></ul>
+  </aside>
+  <article class="reader" id="reader" aria-live="polite"></article>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
